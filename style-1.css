@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(180deg, #fefefe 0%, #fefefe 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+header {
+  background: #4a148c;
+  color: #fff;
+  text-align: left;
+  padding: 40px 60px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.historia {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 20px;
+  align-items: start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.historia img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(74,20,140,0.4);
+}
+
+.zasady {
+  background: #e5deff;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.zasady ul {
+  list-style: square;
+  margin-left: 30px;
+}
+
+.slawni {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.slawni div {
+  flex: 1;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+  color: #6a1b9a;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #b71c1c;
+}
+
+footer {
+  background: #4a148c;
+  color: #edd7f8;
+  text-align: center;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; 
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+    gap: 40px;
+  }
+  header, footer {
+    padding: 30px 20px;
+    height: auto;
+  }
+  .historia {
+    grid-template-columns: 1fr;
+  }
+  .slawni {
+    flex-direction: column;
+  }
+}
