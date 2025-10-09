@@ -17,7 +17,7 @@ body {
 header {
   background:linear-gradient(90deg, #6b5138, #2e1806);
   color: #ff964b;
-  padding: 40px 80px;
+  padding: 40px 0;
   text-align: left;
   border-bottom: 4px solid #ff8800;
 }
