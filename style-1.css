@@ -63,7 +63,7 @@ main {
 .historia img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50% / 50%;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(74,20,140,0.4);
 }
@@ -105,14 +105,14 @@ h3 {
 footer {
   background: #4a148c;
   color: #edd7f8;
-  text-align: center;
+  text-align: left;
   padding: 40px 60px;
   box-sizing: border-box;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 120px; 
 }
