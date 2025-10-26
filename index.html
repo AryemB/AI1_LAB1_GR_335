@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI1 LAB B</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Lista TODO</h1>
+
+        <label for="search">Wyszukiwarka:</label>
+        <input id="search" type="search" placeholder="Szukaj (min. 1 znak)">
+
+        <div id="todo-info" aria-live="polite"></div>
+        <div id="todo-list" class="todo-list" role="list" aria-live="polite"></div>
+
+        <form id="add-form">
+            <input id="new-text" type="text" placeholder="Nowe zadanie (3–255 znaków)" maxlength="255" required>
+            <input id="new-due" type="datetime-local" placeholder="Termin (opcjonalny)">
+            <button id="add-btn" type="submit">Dodaj</button>
+        </form>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
