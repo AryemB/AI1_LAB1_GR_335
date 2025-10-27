@@ -88,13 +88,13 @@ class Todo {
 
   get filteredTasks() {
     const q = this.term.trim().toLowerCase();
-    if (q.length < 1) return this.tasks.slice();
+    if (q.length < 2) return this.tasks.slice();
     return this.tasks.filter((t) => t.text.toLowerCase().includes(q));
   }
 
   highlight(text) {
     const q = this.term.trim();
-    if (q.length < 1) return this._escape(text);
+    if (q.length < 2) return this._escape(text);
 
     const re = new RegExp(this._escapeForRegExp(q), 'ig');
     return this._escape(text).replace(
