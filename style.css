@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ffd6d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#controls {
+  padding: 30px;
+  background: #ffd6d6;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 4px solid #ffa0a0;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#locBtn {
+  width: 120px;
+  height: 35px;
+}
+
+#snapshotBtn {
+  width: 120px;
+  height: 35px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.cell {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  border: 2px solid #333;
+}
+
+.placeholder {
+  color: #888;
+  text-align: center;
+}
+
+#pieces, #slots {
+  gap: 4px;
+  align-content: start;
+}
+
+.piece, .slot {
+  width: 145px;
+  height: 145px;
+  border: 1px dashed #999;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot {
+  border: 1px solid #bbb;
+  background: #fafafa;
+}
+
+.piece img, .slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slot.correct {
+  outline: 3px solid #4caf50;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lab C – Puzzle Map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="controls">
+    <button id="locBtn">Moja lokalizacja</button>
+    <button id="snapshotBtn">Pobierz mapę</button>
+    <label><input type="checkbox" id="notifyReq"> Żądaj powiadomień</label>
+  </div>
+
+  <div id="grid-container">
+
+    <div id="map" class="cell"></div>
+
+    <div id="snapshot" class="cell">
+      <p class="placeholder">Zrzut mapy pojawi się tutaj po kliknięciu "Pobierz mapę"</p>
+    </div>
+
+    <div id="slots" class="cell"></div>
+
+    <div id="pieces" class="cell"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
