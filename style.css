@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url("back.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.top-panel {
+    width: 480px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    border: 2px solid black;
+}
+
+.card {
+    width: 420px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    border: 2px solid black;
+    box-shadow: 0 0 20px rgba(0,0,0,0.35);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#cityInput {
+    width: 68%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-size: 17px;
+    margin-bottom: 10px; 
+}
+
+#weatherBtn {
+    width: 25%;
+    padding: 12px;
+    border-radius: 12px;
+    background: #ff9aac;
+    border: 2px solid black;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#weatherBtn:hover {
+    background: #ff7d94;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff9aac;
+    flex-shrink: 0;
+    border: 2px solid black;
+}
+
+.temp-block {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.temp {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.feel, .desc, .time {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+#forecast {
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.error-block {
+    width: 420px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
